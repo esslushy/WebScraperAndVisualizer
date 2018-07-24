@@ -15,5 +15,6 @@ for link in graph:
 G = nx.Graph()
 G.add_nodes_from(nodes)
 G.add_edges_from(edges)
-nx.draw(G)
+
+nx.draw_circular(G, with_labels=True)
 plt.show()
